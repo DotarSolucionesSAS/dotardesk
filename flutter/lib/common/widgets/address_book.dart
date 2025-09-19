@@ -348,7 +348,7 @@ class _AddressBookState extends State<AddressBook> {
             final e = tags[index];
             return tagBuilder(e);
           });
-      final maxHeight = max(MediaQuery.of(context).size.height / 6, 100.0);
+      final maxHeight = max(MediaQuery.of(context).size.height / 6, 300.0);
       return Obx(() => stateGlobal.isPortrait.isFalse
           ? gridView(false)
           : LimitedBox(maxHeight: maxHeight, child: gridView(true)));
