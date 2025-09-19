@@ -253,7 +253,7 @@ class AbModel {
     final api = "${await bind.mainGetApiServer()}/api/ab/shared/profiles";
     try {
       var uri0 = Uri.parse(api);
-      final pageSize = 100;
+      final pageSize = 300;
       var total = 0;
       int current = 0;
       do {
